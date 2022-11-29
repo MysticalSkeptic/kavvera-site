@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #05631b;
+}
+#myBrand {
+    color: #04b52d;
+}
+#indexH2 {
+    font-family: "British Script MT", Georgia, serif;
+    color: #3211d6;
+    text-shadow: .1em .1em .2em #a64f03;
+}
+#siteFooter {
+    background-color: #05631b;
+}
