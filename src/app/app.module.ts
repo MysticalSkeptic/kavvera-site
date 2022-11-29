@@ -10,6 +10,8 @@ import { LocationsComponent } from './locations/locations.component';
 import { ErrorComponent } from './error/error.component';
 import { MembershipComponent } from './membership/membership.component';
 import { HonorsComponent } from './honors/honors.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HonorsComponent } from './honors/honors.component';
     LocationsComponent,
     ErrorComponent,
     MembershipComponent,
-    HonorsComponent
+    HonorsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
