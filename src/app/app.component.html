@@ -1,56 +1,8 @@
-<app-header></app-header>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark p-0 container-fluid">
-  <a class="navbar-brand"
-    id="myBrand"
-    routerLink="/home-page"
-    routerLinkActive="activebutton"
-    ariaCurrentWhenActive="page"
-    >K&#38;C</a>
-  <button class="navbar-toggler ms-auto"
-    type="button"
-    data-bs-target="#crushMe"
-    data-bs-toggle="collapse">
-    <span class="navbar-toggler-icon"> </span>
-  </button>
-  <ul class="navbar-nav navbar-collapse collapse"
-    id="crushMe">
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/campaigns"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">Campaigns</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/history"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">History</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/home-page"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/honors"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">Honors</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/locations"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">Locations</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/membership"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">Join Us</a>
-    </li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="container bg-white">
+  <div class="row">
+    <app-header></app-header>
+    <app-nav></app-nav>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>  
+</div>
