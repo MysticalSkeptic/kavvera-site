@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { PreloadAllModules, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -40,9 +40,15 @@ import { NavComponent } from './nav/nav.component';
         {path: 'honors', component: HonorsComponent},
         {path: '', redirectTo: '/home-page', pathMatch: 'full'},
         {path: '**', component: ErrorComponent}
-      ]
+        
+      ],
+      {
+        preloadingStrategy: PreloadAllModules,
+        useHash: true
+      }
     )
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
